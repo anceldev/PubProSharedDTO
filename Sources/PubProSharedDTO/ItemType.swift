@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum ItemType: String, Codable {
+public enum ItemType: String, Codable {
     case consumption
     case reward
 }
