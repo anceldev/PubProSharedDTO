@@ -12,13 +12,15 @@ public struct UserResponseDTO: Codable, @unchecked Sendable {
     public var username: String
     public var email: String
     public var points: Int?
+    public var role: UserRole
     public var createdAt: Date?
     
-    public init(id: UUID, username: String, email: String, points: Int? = nil, createdAt: Date? = nil) {
+    public init(id: UUID, username: String, email: String, points: Int? = nil,role: UserRole, createdAt: Date? = nil) {
         self.id = id
         self.username = username
         self.email = email
         self.points = points
+        self.role = role
         self.createdAt = createdAt
     }
 }
